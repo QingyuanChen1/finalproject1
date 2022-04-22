@@ -1,0 +1,30 @@
+.total{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: white;
+    .form-group{
+        background: white;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        h2{
+            text-align: center;
+        }
+        .content{
+            .form-group{
+                background-color: transparent;
+                margin-top:10px;
+                label{
+                    background-color: white;
+                }
+            }
+            p{
+                margin-top:10px;
+                text-align: center;
+            }
+
+        }
+    }
+}

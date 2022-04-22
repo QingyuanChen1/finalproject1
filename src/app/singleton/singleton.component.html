@@ -1,0 +1,33 @@
+<div class="total">
+    <form  class="form-group" [formGroup]="taxForm">
+        <h1>Singleton Pattern + Taxform</h1>
+        <div class="content">
+            <div class="form-group">
+                <label for="moneyinput">
+                    Money:
+                    <input #money formControlName="money" type="text" id="moneyinput" placeholder="enter your amount.." class="form-control"/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="taxinput">
+                    Tax
+                    <input #tax formControlName="tax" type="text" id="taxinput" placeholder="enter your tax.." class="form-control"/>
+                </label>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary calbutton" (click)="calculateTotal(money.value, tax.value)">Calculate it</button>
+            </div>
+    
+    
+            <p>
+                total: {{totalnum() | currency}}
+            </p>
+        </div>
+    </form>
+
+    
+    
+    
+    
+    
+</div>
